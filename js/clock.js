@@ -3,9 +3,9 @@ setInterval(() => {
     let date = new Date();  
   
     // time variables
-    hr = date.getHours();
-    min = date.getMinutes();
-    sec = date.getSeconds();
+    let hr = date.getHours();
+    let min = date.getMinutes();
+    let sec = date.getSeconds();
     //date variable
     let months = ['jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
     let day = date.getDate();
@@ -34,4 +34,4 @@ setInterval(() => {
     sec_span.innerHTML = ':' + sec;
     date_span.innerHTML = `${day} - ${month} - ${year}`;
 
-}, 1000);
+}, 300);
