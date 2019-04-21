@@ -34,4 +34,4 @@ setInterval(() => {
     sec_span.innerHTML = ':' + sec;
     date_span.innerHTML = `${day} - ${month} - ${year}`;
 
-}, 300);
+}, 1000);
