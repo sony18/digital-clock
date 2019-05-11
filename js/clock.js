@@ -40,7 +40,7 @@ setInterval(() => {
     function greeting()
     {
     if(hr<12){
-    return 'Goot Morning ...'
+    return 'Good Morning ...'
 }else if(hr >= 12 && hr <= 17){
     return 'Good Afternoon ...'
 }else {
