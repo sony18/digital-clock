@@ -33,9 +33,30 @@ body {
     text-align: center;
     position: absolute;
     top: -3.8em;
-    left: 3em;
+    left: 3em;   
 }
 
+/* Positioning greeting */
+#greeting{
+    position: absolute;
+    font-size: 1.7rem;
+    font-weight: 600;
+    top:0;
+    left:.2em;
+    color:#F02121; 
+    animation:move 1s linear infinite;
+    opacity:1; 
+}
+
+@keyframes move{
+   
+    50%{
+        opacity:.6;
+    }
+    100%{
+        opacity:1;
+    }
+}
 /* position letter Clock in clock */
 #clock-p {
     font-family: 'Dancing Script';

@@ -18,7 +18,9 @@ setInterval(() => {
     let min_span = document.querySelector('#min');
     let sec_span = document.querySelector('#sec');
     let date_span = document.querySelector('#date');
+    let greeting_span = document.querySelector('#greeting');
 
+    //condition for 1 digit
     if (hr < 10) {
         hr = '0' + hr;
     }
@@ -33,5 +35,20 @@ setInterval(() => {
     min_span.innerHTML = ':' + min;
     sec_span.innerHTML = ':' + sec;
     date_span.innerHTML = `${day} - ${month} - ${year}`;
+
+    //function greeting
+    function greeting()
+    {
+    if(hr<12){
+    return 'Goot Morning ...'
+}else if(hr >= 12 && hr <= 17){
+    return 'Good Afternoon ...'
+}else {
+    return 'Good Evening ...'
+}
+    }
+
+    //greeting call in dom
+greeting_span.innerHTML = greeting();
 
 }, 1000);
