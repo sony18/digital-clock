@@ -43,8 +43,8 @@ body {
     font-weight: 600;
     top:0;
     left:.2em;
-    color:#F02121; 
-    animation:move 1s linear infinite;
+    color:yellow; 
+    animation:move 1.5s linear infinite;
     opacity:1; 
 }
 
